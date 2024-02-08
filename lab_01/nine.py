@@ -136,10 +136,10 @@ class Evristics:
     resulting_state: list = []
     eights = None
 
-    def __init__(self, state: list, available_moves: list, result_state: list, obj: Eights = None):
+    def __init__(self, state: list, available_moves: list, resulting_state: list, obj: Eights = None):
         self.state = state
         self.available_moves = available_moves
-        self.resulting_state = result_state
+        self.resulting_state = resulting_state
         self.eights = obj
 
     def decide(self):
