@@ -1,6 +1,5 @@
 import os
 import random
-
 import click
 import redis
 import math
@@ -22,11 +21,8 @@ N_MAX = 30
 DEFINITION_ENOUGH = 0.95
 DEFINITION_LESS = 0.05
 
-# KEY_DEFINITIONS = f"{os.getenv('REDIS_KEY')}.definitions"
 KEY_PRIMAL_WEIGHTS = f"{os.getenv('REDIS_KEY')}:inner_weights"
-# KEY_PRIMAL_RESULT = f"{os.getenv('REDIS_KEY')}:result_primal"
 KEY_CLASS_WEIGHTS = f"{os.getenv('REDIS_KEY')}:outer_weights"
-# KEY_CLASS_RESULT = f"{os.getenv('REDIS_KEY')}:result_class"
 
 PRIMAL_NEURONS_COUNT = int(math.ceil(DIGITS_SQUARE / 10 * 5))
 CLASS_NEURONS_COUNT = len(CLASSES)
